@@ -1,4 +1,3 @@
--- Fix inappropriate diagnoses for patients
 -- Rajesh Patel: NICU -> Haemodialysis
 UPDATE encounters SET treatment_id = 9 
 WHERE patient_id = 5 AND treatment_id = 6;
