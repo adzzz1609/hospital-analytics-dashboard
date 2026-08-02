@@ -1,4 +1,3 @@
--- Fix treatment_logs totals for affected encounters
 -- Patient 5: Haemodialysis (12000)
 UPDATE treatment_logs SET total = 12000 
 WHERE uniqueID IN (SELECT uniqueID FROM encounters WHERE patient_id = 5 AND treatment_id = 9)
